@@ -1,0 +1,83 @@
+table{
+  height: 200px;
+  width:400px;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+tr{
+  text-align: center;
+}
+td,th{
+ border:1px solid black; 
+  
+}
+thead{
+  background-color:chocolate;
+}
+tbody{
+  background-color:antiquewhite;
+}
+caption{
+  padding: 10px;
+  color:red;
+}
+pre{
+  padding:15px;
+}
+body{
+  background-color: rgb(227, 252, 252);
+  user-select: none;
+}
+#robi{
+  display: inline-block;
+  background-image: url(https://w7.pngwing.com/pngs/605/410/png-transparent-robi-axiata-limited-bangladesh-axiata-group-bharti-airtel-mobile-phones-business-angle-text-people.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 53px;
+  height: 33px;
+  border: 2px solid rgba(0, 0, 0, 0.39);
+  border-radius: 7%;
+  transition: 0.3s;
+}
+#robi:hover{
+  opacity: 0.9;
+  width: 52px;
+  height: 52px;
+  border: 2px ridge rgb(255, 17, 0);
+  border-radius: 59%;
+  box-shadow:0px 0px 20px rgb(255, 17, 0);
+}
+#robi:active{
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+}
+#bl{
+  display:none;
+  background-image: url(banglalink.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 53px;
+  height: 33px;
+  border: 2px ridge rgba(0, 0, 0, 0.226);
+  border-radius: 7%;
+  transition: 0.3s;
+}
+#bl:hover{
+  opacity: 0.9;
+  width: 52px;
+  height: 52px;
+  border: 2px ridge #F16522;
+  box-shadow:0px 0px 20px #F16522;
+  border-radius: 59%;
+}
+#bl:active{
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+}
+#Num{
+  user-select:text;
+}
+
+

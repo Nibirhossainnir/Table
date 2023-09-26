@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Table</title>
+  <link rel="stylesheet" href="Style2.css">
+  <link rel="shortcut icon" type="x-icon" href="https://icons.iconarchive.com/icons/tpdkdesign.net/refresh-cl/256/Windows-Table-icon.png">
+</head>
+<body align=center>
+  <main>
+  <table align=center>
+    <caption><b>Students details</b></caption>
+    <colgroup>
+    <col  style="background-color: rgb(134, 76, 6);" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">GPA</th>
+        <th scope="col">Failed sub.</th>
+        <th scope="col">Details Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">101</td>
+        <td>Rahul</td>
+        <td>3.65</td>
+        <td><font color=red>✘</font></td>
+        <td><a href="Details table.html" target="blank1">Details</a></td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Hanif</td>
+        <td scope="col">4.06</td>
+        <td><font color="red">✘</font></td>
+        <td><a href="Hanif details.html" target="blank2">Details</a></td>
+      </tr>
+      <tr>
+        <td scope="row">103</td>
+        <td>Ratul</td>
+        <td>5.00</td>
+        <td><font color="red">✘</font></td>
+        <td><a href="Ratul details.html" target="blank3">Details</a></td>
+      </tr>
+      <tr>
+        <td scope="row">104</td>
+        <td>Rohit</td>
+        <td>F</td>
+        <td>English</td>
+        <td><a  href="Rohit details.html" target="blank4" >Details</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p id="Num">✆+8801987532626</p>
+<button onclick="Details()" id="robi"></button>
+<button onclick="Details2()" id="bl"></button>
+</main>
+<script>
+  const audiobl = new Audio();
+  audiobl.src = "./bl.mp3";
+  const audiorobi = new Audio();
+  audiorobi.src = "./robi.mp3";
+  function Details(){
+    document.getElementById("Num").innerHTML = "✆+8801885701731<br>✆+8801885701723";
+    document.getElementById("bl").style.display=("inline-block");
+    document.getElementById("robi").style.display=("none");
+    audiorobi.play();
+    audiobl.pause();
+    audiobl.currentTime=0;
+  }
+  function Details2(){
+    document.getElementById("Num").innerHTML = "✆+8801987532626";
+    document.getElementById("robi").style.display=("inline-block");
+    document.getElementById("bl").style.display=("none");
+    audiobl.play();
+    audiorobi.pause();
+    audiorobi.currentTime=0;
+  }
+</script> 
+</body>
+</html>
